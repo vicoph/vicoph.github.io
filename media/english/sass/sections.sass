@@ -1,0 +1,181 @@
+.switch
+	position: absolute
+	top: 2%
+	right: 2%
+	z-index: 99
+	
+	a.lang
+		color: #ffffff
+		font-weight: bold
+		font-family: 'code_boldregular', sans-serif
+/*INTRO*/
+#intro
+	height: 100%
+	width: 100%
+	height: 100vh
+	margin:	0
+	padding:	0
+	position:	relative
+	background:	black
+	background-size:	cover
+	z-index:	-11
+	overflow:	hidden
+
+
+
+	video
+		width:	auto
+		height:	auto
+		min-height:	100%
+		min-width:	100%
+		@include position(absolute, null 0px 0px null)
+		overflow: hidden
+		z-index:	-10
+		opacity:	1
+		display:	block
+
+
+/*	@group	Section	*/
+#overlay
+	display: none
+	
+section
+	width:	100%
+	background-color:	#000
+	font-family: 'lane_-_narrowregular', sans-serif
+	padding:	75px 0 0 0
+	color:	white
+	overflow: hidden
+
+	p
+		font-weight: normal
+		-webkit-text-stroke: 0.6px
+		max-width: 70%
+		text-align:	center
+		margin:	0 auto
+		font-size:	em(22)
+		line-height:	1.3em
+	
+	
+	.descr
+		margin-bottom:	40px
+	
+	
+	h2
+		font-family: 'code_boldregular', sans-serif
+		max-width:	70%
+		text-align:	center
+		font-size:	em(40)
+		margin:	0 auto
+		font-weight:	normal
+	
+	
+	hr
+		display:	block
+		border:	none
+		max-width: 70%
+		height:	2px
+		@include linear-gradient(90deg, #EA1C24 0%, #EC4136 26.5%, #EE5A29 61.5%, #F6EA32 100%)
+		margin:	27px auto 50px auto
+	
+	
+	/*	@group	Play Button	*/
+	
+	.play_vid
+		display:	block
+		background:	url('../assets/images/play_btn.svg')	no-repeat
+		background-size:	50px
+		width:	11%
+		background-position: 5% 50%
+		color:	white
+		padding:	20px 0 20px 0
+		margin:	0px auto 20px auto
+		line-height:	0px
+	
+	
+		p
+			width:	50%
+			font-size:	em(20px)
+			text-align:	left
+			margin-left:	45%	
+			@include transition(all .3s $ease-out-cubic)				
+		
+		
+		&:hover, &:focus
+			background:		url('../assets/images/play_btnactive.svg')	no-repeat
+			background-size:	50px
+			background-position:	0% 50%
+			color:	#fd0032
+	
+	
+	
+	/*	@end	*/
+	
+	
+	
+	
+/*	@end	*/
+
+/*	@group	media	*/
+
+#media
+	width:	100%
+	background-color: #c90032
+
+	h2
+		color:	black
+		margin-bottom:	30px
+	
+	
+	.mediap
+		margin-bottom:	20px
+
+/*	@end	*/
+
+/*	@group	Gran Formato video	*/
+.section_vid
+	height: 100%
+	width: 100%
+	height: 100vh
+	width: 100vw
+	margin:	0px
+	padding:	0px
+	position:	relative
+	overflow:	hidden
+	background:	none
+	background-size:	cover
+	
+	
+	video
+		width:	auto
+		height:	auto
+		min-height:	100%	
+		min-width:	100%
+		@include position(absolute, 0px)
+		overflow: hidden
+		opacity:	1
+		display:	block
+		
+
+	img
+		width:	100%
+		height:	auto
+
+.mobile_p
+	display: none
+	width: 100%
+	
+	.stream
+		width: 100%
+		height: auto
+		
+#stream_vid
+	width: 100%
+	
+	.stream
+		width: 100%
+		height: auto
+		
+	
+/*	@end	*/
+

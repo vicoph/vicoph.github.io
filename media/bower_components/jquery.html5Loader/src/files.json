@@ -1,0 +1,19 @@
+{
+  "files": [{
+    "type": "VIDEO",
+    "sources": {
+      "webm": {
+        "source": "http://mediaconcepts.co/video/intros.webm",
+        "size": 3102441
+      },
+      "ogg": {
+        "source": "http://mediaconcepts.co/video/intros.ogv",
+        "size": 889702
+      },
+      "h264": {
+        "source": "http://mediaconcepts.co/video/intros.mp4",
+        "size": 2792548
+      }
+    }
+  }]
+}

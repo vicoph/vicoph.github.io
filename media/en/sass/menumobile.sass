@@ -1,0 +1,213 @@
+@media only screen and (min-width: 481px) and (max-width:1169px)
+
+	#main
+		opacity:	1
+		@include position(fixed, 7% 0px 0px 0px)
+		@include transform (translateY(0px))
+		z-index:	20
+		max-width:	90%
+		height: 0%
+		margin-left:	3%
+		-webkit-text-stroke: 0.5px
+		font-family: 'lane_-_narrowregular', sans-serif
+		@include transition(all, .3s)
+	
+		nav
+			width:	100%
+			height: 100%
+			display: none
+			@include transition(all, .4s)
+		
+			li
+				width:	100%
+				height: 0px
+				opacity: 0
+				margin-bottom:	1px
+				background:	none
+				padding: 20px auto
+				@include transition(all, .3s)
+				
+			
+				a
+					color:	#ffffff
+					display:	block
+					@include size(100% 100%)
+				
+					span.menuLight
+						display: none
+					
+					
+					div
+						width:	100%
+						height:	100%
+						float:	none
+						overflow:	hidden
+						position:	relative
+					
+						p
+							@include position(relative, 0px 0px 0px 0px)
+							color: $rojomedia
+							line-height: 40px
+							padding-left: 5%
+					
+					&:hover
+					
+						p
+							@include position(absolute, 0px null null 0px)
+	
+	
+	
+	
+	#overlay
+		display: none
+		background: rgba(255,255,255,0)
+		z-index: 15
+		width: 100%
+		@include position(fixed, 0px 0px 0px 0px)
+	
+	
+	.toggle
+		display: block
+		background:	white
+		text-decoration:	none
+		z-index:	2
+		@include position(fixed, -1% null 90% 3%)
+		@include size(37px)
+		font-size:	2.4em
+		line-height:	37px
+		text-align:	center
+		@include transition(all .2s $ease-out-back)
+		cursor:	pointer
+		z-index:	20
+		padding:	3px
+
+		.menu_ico
+			+size(95%)
+			margin-top: 2%
+			position: relative
+			top: 50%
+			+transform (translateY(-50%)) 
+	
+	
+	#sidebartoggler
+		
+		&:checked + #fullscreen
+		
+			#main
+				height: 100%
+				
+				nav
+					display: block
+									
+					li
+						height: 40px
+						opacity: 1
+			
+			#overlay
+				display: block
+				background: rgba(255,255,255,1)
+						
+						
+@media screen and (max-width: 480px) and (orientation:portrait)	
+
+	#main
+		opacity:	1
+		@include position(fixed, 7% 0px 0px 0px)
+		@include transform (translateY(0px))
+		z-index:	20
+		max-width:	90%
+		height: 0%
+		margin-left:	3%
+		-webkit-text-stroke: 0.5px
+		font-family: 'lane_-_narrowregular', sans-serif
+		@include transition(all, .3s)
+	
+		nav
+			width:	100%
+			height: 100%
+			display: none
+			@include transition(all, .4s)
+		
+			li
+				width:	100%
+				height: 0px
+				opacity: 0
+				margin-bottom:	1px
+				background:	none
+				padding: 20px auto
+				@include transition(all, .3s)
+				
+			
+				a
+					color:	#ffffff
+					display:	block
+					@include size(100% 100%)
+				
+					span.menuLight
+						display: none
+					
+					
+					div
+						width:	100%
+						height:	100%
+						float:	none
+						overflow:	hidden
+						position:	relative
+					
+						p
+							@include position(relative, 0px 0px 0px 0px)
+							color: $rojomedia
+							line-height: 40px
+							padding-left: 5%
+					
+					&:hover
+					
+						p
+							@include position(absolute, 0px null null 0px)
+	
+	
+	
+	
+	#overlay
+		display: none
+		background: rgba(255,255,255,0)
+		z-index: 15
+		width: 100%
+		@include position(fixed, 0px 0px 0px 0px)
+	
+	
+	.toggle
+		display: block
+		background:	white
+		text-decoration:	none
+		color:	$rojomedia
+		z-index:	2
+		@include position(fixed, -1% null 90% 3%)
+		@include size(37px)
+		font-size:	2.4em
+		line-height:	37px
+		text-align:	center
+		@include transition(all .2s $ease-out-back)
+		cursor:	pointer
+		z-index:	20
+		padding:	5px
+	
+	
+	#sidebartoggler
+		
+		&:checked + #fullscreen
+		
+			#main
+				height: 100%
+				
+				nav
+					display: block
+									
+					li
+						height: 40px
+						opacity: 1
+			
+			#overlay
+				display: block
+				background: rgba(255,255,255,1)
+						
